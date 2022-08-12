@@ -96,38 +96,40 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 0.8;
 
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	/* 8 normal colors */
-	[0] = "#000000", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	[1] = "#f7768e", /* red     */
-	[2] = "#9ece6a", /* green   */
-	[3] = "#e0af68", /* yellow  */
-	[4] = "#7aa2f7", /* blue    */
-	[5] = "#ad8ee6", /* magenta */
-	[6] = "#449dab", /* cyan    */
-	[7] = "#787c99", /* white   */
+const char *colorname[] = {
 
-	/* 8 bright colors */
-	[8]  = "#000000", /* black   */
-	[9]  = "#ff7a93", /* red     */
-	[10] = "#b9f27c", /* green   */
-	[11] = "#ff9e64", /* yellow  */
-	[12] = "#7da6ff", /* blue    */
-	[13] = "#bb9af7", /* magenta */
-	[14] = "#0db9d7", /* cyan    */
-	[15] = "#acb0d0", /* white   */
+  /* 8 normal colors */
+  [0] = "#24283b", /* black   */
+  [1] = "#f7768e", /* red     */
+  [2] = "#9ece6a", /* green   */
+  [3] = "#ff9e64", /* yellow  */
+  [4] = "#2ac3de", /* blue    */
+  [5] = "#2ac3de", /* magenta */
+  [6] = "#bb9af7", /* cyan    */
+  [7] = "#cfc9c2", /* white   */
+
+  /* 8 bright colors */
+  [8]  = "#24283b",  /* black   */
+  [9]  = "#f7768e",  /* red     */
+  [10] = "#9ece6a", /* green   */
+  [11] = "#ff9e64", /* yellow  */
+  [12] = "#2ac3de", /* blue    */
+  [13] = "#2ac3de", /* magenta */
+  [14] = "#bb9af7", /* cyan    */
+  [15] = "#cfc9c2", /* white   */
+
+  /* special colors */
+  [256] = "#24283b", /* background */
+  [257] = "#a9b1d6", /* foreground */
+  [258] = "#7dcfff",     /* cursor */
 };
 
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 257;
+/* Default colors (colorname index)
+ * foreground, background, cursor */
+ unsigned int defaultbg = 0;
+ unsigned int defaultfg = 257;
+ unsigned int defaultcs = 258;
+ unsigned int defaultrcs= 258;
 
 /*
  * Default shape of cursor
