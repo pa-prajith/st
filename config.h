@@ -94,12 +94,12 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.7;
 
 const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#32344a", /* black   */
+  [0] = "#10141d", /* black   */
   [1] = "#f7768e", /* red     */
   [2] = "#9ece6a", /* green   */
   [3] = "#e0af68", /* yellow  */
@@ -109,7 +109,7 @@ const char *colorname[] = {
   [7] = "#787c99", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#444b6a",  /* black   */
+  [8]  = "#10141d",  /* black   */
   [9]  = "#ff7a93",  /* red     */
   [10] = "#b9f27c", /* green   */
   [11] = "#ff9e64", /* yellow  */
@@ -119,9 +119,9 @@ const char *colorname[] = {
   [15] = "#acb0d0", /* white   */
 
   /* special colors */
-  [256] = "#000000", /* background */
-  [257] = "#7aa2f7", /* foreground */
-  [258] = "#bb9af7",     /* cursor */
+  [256] = "#10141d", /* background */
+  [257] = "#bebda1", /* foreground */
+  [258] = "#ffbb00",     /* cursor */
 };
 
 /* Default colors (colorname index)
